@@ -118,24 +118,36 @@ body {
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
+.problems__list {
+  padding: 20px 13px 4px 30px;
+  background: var(--primary-white-color);
+  color: var(--primary-dark-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  counter-reset: number 0;
+}
+
+.problems__items li::before {
+  content: "";
+  width: 21px;
+  height: 1px;
+  fill: var(--accent-color);
+}
+
+.problems__items {
+  counter-increment: number;
+}
+
 li::before {
   display: block;
   padding-top: 20px;
-  content: counters(section, "1");
-  list-style-type: none;
+  content: counter(number, decimal-leading-zero);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.214;
   letter-spacing: 0.08em;
   color: var(--accent-color);
-}
-
-.problems__items {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 2;
-  letter-spacing: 0.08em;
-  color: var(--primary-dark-color);
-  background: var(--primary-white-color);
 }
 /*# sourceMappingURL=main.css.map */
