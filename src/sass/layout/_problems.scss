@@ -30,16 +30,18 @@
   line-height: 2;
   letter-spacing: 0.08em;
   counter-reset: number 0;
- }
+  }
   .problems__items {
   counter-increment: number;}
   li::before {
   display: block;
   padding-top: 20px;
-  content: counter(number, decimal-leading-zero);
+  content: "— " counter(number, decimal-leading-zero);
+  left: -18px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.214;
   letter-spacing: 0.08em;
   color: var(--accent-color);
   }
+  
