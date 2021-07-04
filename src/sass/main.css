@@ -201,9 +201,9 @@ body {
 
 @media screen and (min-width: 1366px) {
   .problems {
-    background-image: linear-gradient(to bottom, var(--primary-dark-color) 69.24%, var(--primary-white-color) 30.76%), url("../src/images/campfire.svg");
+    background-image: linear-gradient(to bottom, var(--primary-dark-color) 69.24%, var(--primary-white-color) 30.76%), url(../src/images/campfire.svg);
     background-repeat: no-repeat;
-    background-position-y: 70%;
+    background-position: 70% 70%;
   }
   .problems__title {
     font-size: 46px;
