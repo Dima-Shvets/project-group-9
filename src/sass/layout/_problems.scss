@@ -1,8 +1,8 @@
 .problems {
   background-image: linear-gradient(
     to bottom,
-    var(--primary-dark-color) 78.5%,
-    var(--primary-white-color) 21.5%
+    var(--primary-dark-color) 78.53%,
+    var(--primary-white-color) 21.47%
   );
   &__title {
     padding-bottom: 24px;
@@ -22,7 +22,6 @@
   }
  }
 .problems__list{
-  padding: 20px 13px 4px 30px;
   background: var(--primary-white-color);
   color: var(--primary-dark-color);
   font-weight: 700;
@@ -32,8 +31,8 @@
   counter-reset: number 0;
   }
   .problems__items {
-  counter-increment: number;}
-  li::before {
+    counter-increment: number;}
+  .problems__items::before {
   display: block;
   padding-top: 20px;
   content: "— " counter(number, decimal-leading-zero);
@@ -44,4 +43,29 @@
   letter-spacing: 0.08em;
   color: var(--accent-color);
   }
-  
+  @media screen and (min-width: 320px) and (max-width: 767px){
+    .problems__list{
+      padding: 20px 13px 4px 30px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: stretch;
+      flex-basis: calc(100% / 1) ;
+      }
+      .problems__items{
+       margin: 0 ;}
+    }
+  @media screen and (min-width: 768px) {
+    .problems__description{width: 100%;
+      
+       }
+    .problems__list{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 94px 10px 96px;
+      margin-right: -20px;
+      flex-basis: calc(100%/2);
+    }
+      .problems__items{
+      margin-right: 20px;}
+         }
