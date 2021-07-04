@@ -171,6 +171,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .problems {
+    margin-right: -20px;
     background-image: linear-gradient(to bottom, var(--primary-dark-color) 77.6%, var(--primary-white-color) 32.47%);
   }
   .problems__title {
@@ -186,8 +187,7 @@ body {
   .problems__list {
     display: flex;
     flex-wrap: wrap;
-    padding: 30px 94px 10px 96px;
-    margin-right: -20px;
+    padding: 30px 46.8px 10px 96px;
     flex-basis: calc(100%/2);
     align-content: stretch;
     justify-content: stretch;
