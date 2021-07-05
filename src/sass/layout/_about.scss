@@ -10,7 +10,7 @@
 
   @media screen and (min-width: 1366px) {
     padding-top: 130px;
-    padding-bottom: 76px;
+    padding-bottom: 65px;
   }
 }
 
@@ -96,7 +96,11 @@
   margin-bottom: 38px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 50px;
+    margin-bottom: 46px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    margin-bottom: 54px;
   }
 }
 
@@ -170,10 +174,10 @@
 }
 
 .teacher-section__text:last-of-type {
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 24px;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1366px) {
