@@ -8,11 +8,12 @@
     font-weight: 800;
     letter-spacing: 0.03em;
     color: var(--accent-color);
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);}
+    }
     .problems__description {
       background: var(--primary-white-color);
       margin-left:auto;
       margin-right: auto;
+      box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
       }
   .problems__list {
   color: var(--primary-dark-color);
@@ -37,15 +38,14 @@
     .problems {
       padding-top: 27px;
       padding-bottom: 39px;
-            background-image: linear-gradient(
+      background-image: linear-gradient(
         to bottom,
         var(--primary-dark-color) 545px,
-        var(--primary-white-color) 21.47%
-      );
+        var(--primary-white-color) 149px);
       &__title {
-        width: 428px;
-        padding-top: 59.5px; ;
-        padding-bottom: 25px;
+        max-width: 100%;
+        padding-top: 27px; ;
+        padding-bottom: 28px;
         font-size: 24px;
         }
       &__title-component {
@@ -53,25 +53,26 @@
         }
       &__description {
         padding: 20px 13px 4px 30px;
-          }
+        }
+                     
      &__list{
       font-size: 14px;
       line-height: 2;
           }}
-    .problems__list > .problems__items:nth-child(1){
+     .problems__list > .problems__items:nth-child(1) {
       margin-bottom: 10px;}
-     .problems__list>.problems__items:nth-child(4) {
-       margin-bottom:33px;
+     .problems__list > .problems__items:nth-child(4) {
+       margin-bottom:28px;
      }
-    }
+       }
   @media screen and (min-width: 768px) and (max-width: 1365px) {
     .problems {
       margin-right: -20px;
       background-image: linear-gradient(
         to bottom,
-        var(--primary-dark-color) 77.6%,
-        var(--primary-white-color) 32.47%
-      );
+        var(--primary-dark-color) 340px,
+        var(--primary-white-color) 154.5px
+              );
         &__title {
           padding: 59.5px 198px 25px 2px;
           font-size: 24px;
@@ -100,8 +101,9 @@
   @media screen and (min-width: 1366px) { 
     .problems {
       position: relative;
+      max-width: 1680px;
       background-image:linear-gradient(to bottom, var(--primary-dark-color) 69.24%, var(--primary-white-color) 30.76%,);
-      &__title::after {
+      &__description::after {
         position: absolute;
         display: block;
         content: '';
@@ -110,21 +112,23 @@
         background-position: right;
         width: 455px;
         height: 472px;
-        z-index: -1;
-        right: 0;
-        bottom: 0;
+        z-index: 1;
+        right: -231px;
+        bottom: 131px;
          }
     &__title {
       padding-top: 100px;
       padding-bottom: 70px;
-      padding-right: 631px;
       font-size: 46px;}
     &__title-component {
         font-size: 46px;
               }
       &__description {
-        z-index: -2;
-        padding: 30px 94px 10px 96px;
+        position: relative;
+        width: 1314px;
+        height: 362px;
+        padding: 89px 112px 43px 114px;
+        z-index: 2;
         }
       &__list {
           display: flex;
@@ -132,8 +136,10 @@
           font-size: 20px;
         line-height: 1.4;
         margin-right: -40px;
+        
       }}
       .problems__list > .problems__items{
         flex-basis: calc(100% / 3 - 40px);
-        margin-right: 40px;}
+        margin-right: 40px;
+      margin-bottom: 32px;}
       }

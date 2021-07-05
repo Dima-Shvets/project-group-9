@@ -107,15 +107,16 @@ body {
   font-weight: 800;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
 .problems__description {
-  width: 100%;
+  background: var(--primary-white-color);
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
 .problems__list {
-  background: var(--primary-white-color);
   color: var(--primary-dark-color);
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -140,91 +141,109 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .problems {
-    padding-top: 23px;
-    background-image: linear-gradient(to bottom, var(--primary-dark-color) 78.53%, var(--primary-white-color) 21.47%);
+    padding-top: 27px;
+    padding-bottom: 39px;
+    background-image: linear-gradient(to bottom, var(--primary-dark-color) 545px, var(--primary-white-color) 149px);
   }
   .problems__title {
-    padding-bottom: 27px;
+    max-width: 100%;
+    padding-top: 27px;
+    padding-bottom: 28px;
     font-size: 24px;
   }
   .problems__title-component {
     font-size: 24px;
   }
   .problems__description {
-    width: 100%;
+    padding: 20px 13px 4px 30px;
   }
   .problems__list {
-    padding: 20px 13px 4px 30px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: stretch;
-    flex-basis: calc(100% / 1);
     font-size: 14px;
     line-height: 2;
   }
-  .problems__items {
-    padding: 0;
-    margin: 0;
+  .problems__list > .problems__items:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .problems__list > .problems__items:nth-child(4) {
+    margin-bottom: 28px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .problems {
     margin-right: -20px;
-    background-image: linear-gradient(to bottom, var(--primary-dark-color) 77.6%, var(--primary-white-color) 32.47%);
+    background-image: linear-gradient(to bottom, var(--primary-dark-color) 340px, var(--primary-white-color) 154.5px);
   }
   .problems__title {
-    padding: 27px 20px 39px;
+    padding: 59.5px 198px 25px 2px;
     font-size: 24px;
   }
   .problems__title-component {
     font-size: 24px;
   }
   .problems__description {
-    width: 100%;
+    width: 688px;
+    height: 303px;
+    padding: 30px 46.8px 10px 96px;
   }
   .problems__list {
     display: flex;
     flex-wrap: wrap;
-    padding: 30px 46.8px 10px 96px;
-    flex-basis: calc(100%/2);
-    align-content: stretch;
-    justify-content: stretch;
     font-size: 14px;
     line-height: 2;
+    margin-right: -22px;
   }
-  .problems__items {
-    margin-right: 20px;
+  .problems__list > .problems__items {
+    flex-basis: calc(100% / 2 - 22px);
+    margin-right: 22px;
   }
 }
 
 @media screen and (min-width: 1366px) {
   .problems {
-    background-image: linear-gradient(to bottom, var(--primary-dark-color) 69.24%, var(--primary-white-color) 30.76%), url(../images/problems/campfire.svg);
+    position: relative;
+    max-width: 1680px;
+    background-image: linear-gradient(to bottom, var(--primary-dark-color) 69.24%, var(--primary-white-color) 30.76%);
+  }
+  .problems__description::after {
+    position: absolute;
+    display: block;
+    content: '';
+    background-image: url(../images/problems/campfire.svg);
     background-repeat: no-repeat;
-    background-position: 70% 70%;
+    background-position: right;
+    width: 455px;
+    height: 472px;
+    z-index: 1;
+    right: -231px;
+    bottom: 131px;
   }
   .problems__title {
+    padding-top: 100px;
+    padding-bottom: 70px;
     font-size: 46px;
   }
   .problems__title-component {
     font-size: 46px;
   }
   .problems__description {
-    width: 100%;
+    position: relative;
+    width: 1314px;
+    height: 362px;
+    padding: 89px 112px 43px 114px;
+    z-index: 2;
   }
   .problems__list {
     display: flex;
     flex-wrap: wrap;
-    padding: 30px 94px 10px 96px;
-    margin-right: -20px;
-    flex-basis: calc(100%/3);
     font-size: 20px;
     line-height: 1.4;
+    margin-right: -40px;
   }
-  .problems__items {
-    margin-right: 20px;
+  .problems__list > .problems__items {
+    flex-basis: calc(100% / 3 - 40px);
+    margin-right: 40px;
+    margin-bottom: 32px;
   }
 }
 /*# sourceMappingURL=main.css.map */
