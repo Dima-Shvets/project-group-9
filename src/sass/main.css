@@ -147,7 +147,6 @@ body {
   }
   .problems__title {
     max-width: 100%;
-    padding-top: 27px;
     padding-bottom: 28px;
     font-size: 24px;
   }
@@ -201,12 +200,12 @@ body {
 
 @media screen and (min-width: 1366px) {
   .problems {
+    position: relative;
+    max-width: 1680px;
+    overflow-x: hidden;
     align-items: center;
     background-image: linear-gradient(to bottom, var(--primary-dark-color) 560px, var(--primary-white-color) 131px);
-  }
-  .problems .problems__container {
-    position: relative;
-    z-index: 1;
+    z-index: -1;
   }
   .problems__title {
     padding-top: 100px;
@@ -218,11 +217,9 @@ body {
   }
   .problems__description {
     position: relative;
-    max-width: 1680px;
     width: 1314px;
     height: 362px;
     padding: 89px 112px 43px 114px;
-    z-index: 1;
   }
   .problems__description::after {
     position: absolute;
@@ -234,7 +231,8 @@ body {
     width: 455px;
     height: 472px;
     right: -231px;
-    bottom: 111px;
+    bottom: 114px;
+    z-index: -1;
   }
   .problems__list {
     display: flex;
