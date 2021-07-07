@@ -32,20 +32,18 @@
     padding-bottom: 25px;
     background-image: linear-gradient(
       to bottom,
-      var(--primary-dark-color) 545px,
-      var(--primary-white-color) 149px
+      var(--primary-dark-color) 78.64%,
+      var(--primary-white-color) 21.36%
     );
     &__title {
-      max-width: 100%;
       margin-bottom: 25px;
     }
     &__description {
       padding: 20px 14px 20px 30px;
     }
     &__list {
-      min-height:488px;
       font-size: 14px;
-      line-height: 1,43;
+      line-height: 1.43;
     }
     &__items::before {
       padding-bottom: 5px;
@@ -61,15 +59,14 @@
   .problems {
       background-image: linear-gradient(
       to bottom,
-      var(--primary-dark-color) 340px,
-      var(--primary-white-color) 154.5px
+      var(--primary-dark-color) 69.18%,
+      var(--primary-white-color) 30.82%
     );
     &__title {
+      padding-top: 10px;
       margin-bottom:  25px;
     }
     &__description {
-      width: 688px;
-      min-height: 303px;
       padding: 26px 96px 30px 96px;
       }
     &__items::before {
@@ -83,6 +80,7 @@
     flex-wrap: wrap;
     font-size: 14px;
     line-height: 1.43;
+    margin-left: -22px;
   }
   .problems__list > .problems__items {
     flex-basis: calc((100% - 44px) / 2);
@@ -97,24 +95,25 @@
 }
 @media screen and (min-width: 1366px) {
   .problems {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 65px;
     position: relative;
     max-width: 1680px;
     overflow-x: hidden;
     align-items: center;
     background-image: linear-gradient(
       to bottom,
-      var(--primary-dark-color) 560px,
-      var(--primary-white-color) 150px
+      var(--primary-dark-color) 78.87%,
+      var(--primary-white-color) 21.13%
     );
     z-index: -1;
     &__title {
-      padding-top: 100px;
-      margin-bottom: 70px;
+       margin-bottom: 70px;
     }
     &__description {
       position: relative;
-      width: 1314px;
-      min-height: 362px;
       padding: 70px 112px 62px 114px;
       &::after {
         position: absolute;
@@ -135,6 +134,7 @@
       flex-wrap: wrap;
       font-size: 20px;
       line-height: 1.4;
+      margin-left: -40px;
     }
     &__items::before {
       padding-bottom: 10px;

@@ -160,19 +160,17 @@ img {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .problems {
     padding-bottom: 25px;
-    background-image: linear-gradient(to bottom, var(--primary-dark-color) 545px, var(--primary-white-color) 149px);
+    background-image: linear-gradient(to bottom, var(--primary-dark-color) 78.64%, var(--primary-white-color) 21.36%);
   }
   .problems__title {
-    max-width: 100%;
     margin-bottom: 25px;
   }
   .problems__description {
     padding: 20px 14px 20px 30px;
   }
   .problems__list {
-    min-height: 488px;
     font-size: 14px;
-    line-height: 1,43;
+    line-height: 1.43;
   }
   .problems__items::before {
     padding-bottom: 5px;
@@ -186,14 +184,13 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .problems {
-    background-image: linear-gradient(to bottom, var(--primary-dark-color) 340px, var(--primary-white-color) 154.5px);
+    background-image: linear-gradient(to bottom, var(--primary-dark-color) 69.18%, var(--primary-white-color) 30.82%);
   }
   .problems__title {
+    padding-top: 10px;
     margin-bottom: 25px;
   }
   .problems__description {
-    width: 688px;
-    min-height: 303px;
     padding: 26px 96px 30px 96px;
   }
   .problems__items::before {
@@ -206,6 +203,7 @@ img {
     flex-wrap: wrap;
     font-size: 14px;
     line-height: 1.43;
+    margin-left: -22px;
   }
   .problems__list > .problems__items {
     flex-basis: calc((100% - 44px) / 2);
@@ -221,21 +219,22 @@ img {
 
 @media screen and (min-width: 1366px) {
   .problems {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 65px;
     position: relative;
     max-width: 1680px;
     overflow-x: hidden;
     align-items: center;
-    background-image: linear-gradient(to bottom, var(--primary-dark-color) 560px, var(--primary-white-color) 150px);
+    background-image: linear-gradient(to bottom, var(--primary-dark-color) 78.87%, var(--primary-white-color) 21.13%);
     z-index: -1;
   }
   .problems__title {
-    padding-top: 100px;
     margin-bottom: 70px;
   }
   .problems__description {
     position: relative;
-    width: 1314px;
-    min-height: 362px;
     padding: 70px 112px 62px 114px;
   }
   .problems__description::after {
@@ -256,6 +255,7 @@ img {
     flex-wrap: wrap;
     font-size: 20px;
     line-height: 1.4;
+    margin-left: -40px;
   }
   .problems__items::before {
     padding-bottom: 10px;
