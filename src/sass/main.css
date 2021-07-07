@@ -104,62 +104,69 @@ img {
 }
 
 .guarantee {
-  padding-top: 46px;
-  padding-bottom: 50px;
-}
-
-@media screen and (min-width: 768px) {
-  .guarantee {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 28px;
-    padding-left: 28px;
-  }
-}
-
-.guarantee {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1366px) {
   .guarantee {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-}
-
-@media screen and (min-width: 1368px) {
-  .guarantee {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 }
 
 .guarantee__title {
   text-align: center;
-  color: var(--primary-black-color);
+  font-size: 26px;
+  color: var(--primary-dark-color);
 }
 
-.guarantee__text {
-  font-size: 12px;
-  color: var(--secondary-grey-color);
-  line-height: 1.67;
-}
-
-@media screen and (min-width: 1368px) {
-  .guarantee__text {
-    font-size: 20px;
-    line-height: 1.4;
+@media screen and (min-width: 1366px) {
+  .guarantee__title {
+    font-size: 46px;
   }
 }
 
-@media screen and (min-width: 1368px) {
+.guarantee__container {
+  background-color: var(--background-section-color);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .guarantee__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .guarantee__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.guarantee__text {
+  position: relative;
+  font-size: 12px;
+  color: var(--secondary-grey-color);
+  line-height: 1.67;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
   .guarantee__text {
-    width: 100%;
-    height: 60px;
-    font-size: 18px;
-    line-height: 28px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .guarantee__text {
+    font-size: 20px;
+    line-height: 1.4;
+    padding-left: 30px;
   }
 }
 
@@ -170,7 +177,7 @@ img {
 .guarantee__list {
   margin-top: 30px;
   padding-top: 50px;
-  background-color: var(--background-section-color);
+  padding-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
@@ -182,7 +189,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1368px) {
+@media screen and (min-width: 1366px) {
   .guarantee__list {
     padding-top: 50px;
     padding-right: 112px;
@@ -195,67 +202,57 @@ img {
 .guarantee__item {
   font-size: 12px;
   line-height: 40px;
-  padding-bottom: 50px;
   padding-right: 20px;
-  padding-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .guarantee__item {
-    padding-bottom: 50px;
     padding-right: 30px;
-    padding-left: 32px;
   }
 }
 
-@media screen and (min-width: 1368px) {
+@media screen and (min-width: 1366px) {
   .guarantee__item {
-    display: block;
-    margin-left: 52px;
-    padding-top: 0;
+    padding-left: 30px;
+  }
+  .guarantee__item:not(:last-child) {
+    padding-bottom: 23px;
+    border-left: 1px dashed;
   }
 }
 
-.guarantee__item::before {
-  content: '';
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-width: 15px;
-  height: 20px;
-  position: absolute;
-  left: 14px;
-  background-image: url("../images/guarantee/fire.svg");
+@media screen and (min-width: 1366px) and (min-width: 768px) {
+  .guarantee__item:not(:last-child) {
+    padding-bottom: 20px;
+    border-left: 1px dashed;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1366px) {
   .guarantee__item::before {
+    display: block;
     content: '';
+    background-image: url("../images/guarantee/fire.svg");
     background-size: contain;
     background-repeat: no-repeat;
     min-width: 15px;
     height: 20px;
     position: absolute;
-    left: 113px;
-    padding-bottom: 100px;
-    background-image: url("../images/guarantee/fire.svg");
+    left: 14px;
   }
 }
 
-@media screen and (min-width: 1368px) {
+@media screen and (min-width: 1366px) and (min-width: 768px) {
   .guarantee__item::before {
-    content: '';
-    background-size: contain;
-    background-repeat: no-repeat;
+    left: 113px;
+  }
+}
+
+@media screen and (min-width: 1366px) and (min-width: 1366px) {
+  .guarantee__item::before {
     min-width: 22px;
     height: 30px;
-    position: absolute;
-    left: 203px;
-    padding-bottom: 100px;
-    background-image: url("../images/guarantee/fire.svg");
+    left: 125px;
   }
-}
-
-.guarantee__item:not(:last-child) {
-  border-left: 1px dashed;
 }
 /*# sourceMappingURL=main.css.map */
