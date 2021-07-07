@@ -123,15 +123,10 @@ img {
 }
 
 .problems__title {
-  font-weight: 800;
-  line-height: 1.3;
-  letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
 
 .problems__title-component {
-  font-weight: 800;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 
@@ -155,72 +150,72 @@ img {
 
 .problems__items::before {
   display: block;
-  padding-bottom: 5px;
   content: "— " counter(number, decimal-leading-zero);
   left: -18px;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.214;
   letter-spacing: 0.08em;
   color: var(--accent-color);
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .problems {
-    padding-top: 27px;
-    padding-bottom: 39px;
+    padding-bottom: 25px;
     background-image: linear-gradient(to bottom, var(--primary-dark-color) 545px, var(--primary-white-color) 149px);
   }
   .problems__title {
     max-width: 100%;
-    padding-bottom: 28px;
-    font-size: 24px;
-  }
-  .problems__title-component {
-    font-size: 24px;
+    margin-bottom: 25px;
   }
   .problems__description {
-    padding: 20px 13px 4px 30px;
+    padding: 20px 14px 20px 30px;
   }
   .problems__list {
+    min-height: 488px;
     font-size: 14px;
-    line-height: 2;
+    line-height: 1,43;
   }
-  .problems__list > .problems__items:nth-child(1) {
-    margin-bottom: 10px;
+  .problems__items::before {
+    padding-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.214;
   }
-  .problems__list > .problems__items:nth-child(4) {
-    margin-bottom: 28px;
+  .problems__list > .problems__items:not(:last-child) {
+    margin-bottom: 15px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .problems {
-    margin-right: -20px;
     background-image: linear-gradient(to bottom, var(--primary-dark-color) 340px, var(--primary-white-color) 154.5px);
   }
   .problems__title {
-    padding: 59.5px 198px 25px 2px;
-    font-size: 24px;
-  }
-  .problems__title-component {
-    font-size: 24px;
+    margin-bottom: 25px;
   }
   .problems__description {
     width: 688px;
-    height: 303px;
-    padding: 30px 46.8px 10px 96px;
+    min-height: 303px;
+    padding: 26px 96px 30px 96px;
+  }
+  .problems__items::before {
+    padding-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.214;
   }
   .problems__list {
     display: flex;
     flex-wrap: wrap;
     font-size: 14px;
-    line-height: 2;
-    margin-right: -22px;
+    line-height: 1.43;
   }
   .problems__list > .problems__items {
-    flex-basis: calc(100% / 2 - 22px);
-    margin-right: 22px;
+    flex-basis: calc((100% - 44px) / 2);
+    margin-left: 22px;
+  }
+  .problems__list > .problems__items:nth-child(n + 3) {
+    margin-top: 8px;
+  }
+  .problems__list > .problems__items:nth-child(n + 5) {
+    margin-top: 32px;
   }
 }
 
@@ -230,22 +225,18 @@ img {
     max-width: 1680px;
     overflow-x: hidden;
     align-items: center;
-    background-image: linear-gradient(to bottom, var(--primary-dark-color) 560px, var(--primary-white-color) 131px);
+    background-image: linear-gradient(to bottom, var(--primary-dark-color) 560px, var(--primary-white-color) 150px);
     z-index: -1;
   }
   .problems__title {
     padding-top: 100px;
-    padding-bottom: 51px;
-    font-size: 46px;
-  }
-  .problems__title-component {
-    font-size: 46px;
+    margin-bottom: 70px;
   }
   .problems__description {
     position: relative;
     width: 1314px;
-    height: 362px;
-    padding: 89px 112px 43px 114px;
+    min-height: 362px;
+    padding: 70px 112px 62px 114px;
   }
   .problems__description::after {
     position: absolute;
@@ -265,12 +256,18 @@ img {
     flex-wrap: wrap;
     font-size: 20px;
     line-height: 1.4;
-    margin-right: -40px;
+  }
+  .problems__items::before {
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.2;
   }
   .problems__list > .problems__items {
-    flex-basis: calc(100% / 3 - 40px);
-    margin-right: 40px;
-    margin-bottom: 32px;
+    flex-basis: calc((100% - 120px) / 3);
+    margin-left: 40px;
+  }
+  .problems__list > .problems__items:nth-child(n + 4) {
+    margin-top: 32px;
   }
 }
 
