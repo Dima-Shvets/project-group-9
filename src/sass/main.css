@@ -228,7 +228,7 @@ img {
   height: 20px;
   position: absolute;
   left: 15px;
-  background-image: url("../images/fire.png");
+  background-image: url("../images/guarantee/fire.svg");
 }
 
 @media screen and (min-width: 768px) {
@@ -241,7 +241,7 @@ img {
     position: absolute;
     left: 113px;
     padding-bottom: 100px;
-    background-image: url("../images/fire.png");
+    background-image: url("../images/guarantee/fire.svg");
   }
 }
 
@@ -255,7 +255,7 @@ img {
     position: absolute;
     left: 203px;
     padding-bottom: 100px;
-    background-image: url("../images/fire.png");
+    background-image: url("../images/guarantee/fire.svg");
   }
 }
 

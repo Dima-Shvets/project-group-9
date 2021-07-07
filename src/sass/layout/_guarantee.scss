@@ -114,7 +114,7 @@
   position: absolute;
   left: 15px;
 
-  background-image: url('../images/fire.png');
+  background-image: url('../images/guarantee/fire.svg');
 }
 @media screen and (min-width: 768px) {
   .guarantee__item::before {
@@ -127,7 +127,7 @@
     position: absolute;
     left: 113px;
     padding-bottom: 100px;
-    background-image: url('../images/fire.png');
+    background-image: url('../images/guarantee/fire.svg');
   }
 }
 @media screen and (min-width: 1368px) {
@@ -141,7 +141,7 @@
     position: absolute;
     left: 203px;
     padding-bottom: 100px;
-    background-image: url('../images/fire.png');
+    background-image: url('../images/guarantee/fire.svg');
   }
 }
 
