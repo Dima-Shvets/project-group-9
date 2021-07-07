@@ -23,8 +23,6 @@
     letter-spacing: 0.08em;
     color: #111518;
 
-    margin-bottom: 50px;
-
     &_grey {
         display: block;
         font-weight: 500;
@@ -39,16 +37,17 @@
 }
 
 .hero__link {
-    display: block;
+    display: flex;
+    justify-content: center;
     max-width: 260px;
     padding-top: 14px;
     padding-bottom: 14px;
+    margin-top: 52px;
     
     
     font-weight: 700;
     font-size: 12px;
     line-height: 1.25;
-    text-align: center;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--primary-white-color);
@@ -73,7 +72,7 @@
 
 @media screen and (max-width:767px) {
     .hero__link {
-        margin: 0 auto 55px;
+        margin: 52px auto 55px;
     }
 
     .hero__container_img {
@@ -138,6 +137,9 @@
     }
 
     .hero__link {
+        max-width: 354px;
+        padding-top: 26px;
+        padding-bottom: 26px;
         font-size: 14px;
     }
 
