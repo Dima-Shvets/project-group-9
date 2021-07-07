@@ -1,7 +1,113 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+:root {
+  --primary-black-color: #000000;
+  --primary-white-color: #ffffff;
+  --primary-dark-color: #111518;
+  --accent-color: #ff6b09;
+  --primary-grey-color: #b9b9b9;
+  --secondary-grey-color: #3d3d3d;
+  --main-font: "Montserrat", sans-serif;
+  --background-section-color: #f1f1f1;
+  --background-modal-color: rgba(17, 21, 24, 0.9);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-grey-color);
+  font-family: var(--main-font);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1344px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
 .guarantee {
   padding-top: 46px;
   padding-bottom: 50px;
 }
+
 @media screen and (min-width: 768px) {
   .guarantee {
     padding-top: 50px;
@@ -10,16 +116,19 @@
     padding-left: 28px;
   }
 }
+
 .guarantee {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
 @media screen and (min-width: 768px) {
   .guarantee {
     padding-top: 25px;
     padding-bottom: 25px;
   }
 }
+
 @media screen and (min-width: 1368px) {
   .guarantee {
     padding-top: 75px;
@@ -31,19 +140,22 @@
   text-align: center;
   color: var(--primary-black-color);
 }
+
 .guarantee__text {
   width: 100%;
-
   height: 80px;
   color: var(--secondary-grey-color);
   line-height: 20px;
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .guarantee__text {
     padding-top: 0;
     font-size: 12px;
     line-height: 20px;
   }
 }
+
 @media screen and (min-width: 1368px) {
   .guarantee__text {
     width: 100%;
@@ -52,15 +164,17 @@
     line-height: 28px;
   }
 }
+
 .accent-color {
   color: var(--accent-color);
 }
+
 .guarantee__list {
   margin-top: 30px;
   padding-top: 50px;
-
   background-color: var(--background-section-color);
 }
+
 @media screen and (min-width: 768px) {
   .guarantee__list {
     margin-top: 30px;
@@ -71,6 +185,7 @@
     background-color: var(--background-section-color);
   }
 }
+
 @media screen and (min-width: 1368px) {
   .guarantee__list {
     padding-top: 50px;
@@ -88,14 +203,15 @@
   padding-right: 20px;
   padding-left: 20px;
 }
+
 @media screen and (min-width: 768px) {
   .guarantee__item {
     padding-bottom: 50px;
-
     padding-right: 30px;
     padding-left: 32px;
   }
 }
+
 @media screen and (min-width: 1368px) {
   .guarantee__item {
     display: block;
@@ -108,43 +224,42 @@
   content: '';
   background-size: contain;
   background-repeat: no-repeat;
-
   min-width: 15px;
   height: 20px;
   position: absolute;
   left: 15px;
-
-  background-image: url('../images/fire.png');
+  background-image: url("../images/fire.png");
 }
+
 @media screen and (min-width: 768px) {
   .guarantee__item::before {
     content: '';
     background-size: contain;
     background-repeat: no-repeat;
-
     min-width: 15px;
     height: 20px;
     position: absolute;
     left: 113px;
     padding-bottom: 100px;
-    background-image: url('../images/fire.png');
+    background-image: url("../images/fire.png");
   }
 }
+
 @media screen and (min-width: 1368px) {
   .guarantee__item::before {
     content: '';
     background-size: contain;
     background-repeat: no-repeat;
-
     min-width: 22px;
     height: 30px;
     position: absolute;
     left: 203px;
     padding-bottom: 100px;
-    background-image: url('../images/fire.png');
+    background-image: url("../images/fire.png");
   }
 }
 
 .guarantee__item:not(:last-child) {
   border-left: 1px dashed;
 }
+/*# sourceMappingURL=main.css.map */
