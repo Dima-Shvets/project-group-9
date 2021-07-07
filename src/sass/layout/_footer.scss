@@ -17,7 +17,8 @@
 }
 
 .page-footer {
-    outline: 1px solid tomato;
+  
+    background-image: linear-gradient(to top, var(--primary-dark-color) 70px, var(--primary-white-color) 70px);
 }
 
 .footer-container {
