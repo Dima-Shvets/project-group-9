@@ -81,18 +81,14 @@
     font-size: 14px;
     line-height: 1.43;
     margin-left: -22px;
+    margin-top: -20px;
   }
   .problems__list > .problems__items {
     flex-basis: calc((100% - 44px) / 2);
     margin-left: 22px;
-    &:nth-child(n + 3) {
-      margin-top: 8px;
-    }
-    &:nth-child(n + 5) {
-    margin-top: 32px;
+    margin-top: 20px;
     }
   }
-}
 @media screen and (min-width: 1366px) {
   .problems {
     margin-right: auto;
@@ -124,8 +120,9 @@
         background-position: right;
         width: 455px;
         height: 472px;
+        transform: translateY(-50px);
         right: -231px;
-        bottom: 114px;
+        bottom: 0;
         z-index: -1;
       }
     }
