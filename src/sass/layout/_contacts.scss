@@ -77,10 +77,11 @@
 .contacts__input {
   width: 280px;
   height: 48px;
-  padding-left: 28px;
+  padding: 0;
   background-color: transparent;
   border: 1px solid var(--primary-white-color);
   color: var(--primary-white-color);
+  padding-left: 28px;
 }
 
 .contacts__input::placeholder {
@@ -183,9 +184,13 @@
     line-height: 1.23;
   }
 
+  .contacts__field {
+    margin-bottom: 30px;
+  }
+
   .contacts__input {
     width: 478px;
-    height: 67px;
+    height: 70px;
     padding-left: 40px;
   }
 
