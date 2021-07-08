@@ -114,7 +114,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 0;
   }
 }
 
@@ -262,7 +262,7 @@
 
 .slick-img {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   padding-top: 62px;
 }
@@ -281,4 +281,7 @@
 
 .slick-img__item:not(:last-child) {
   margin-right: 30px;
+}
+.slick-plus {
+  display: none;
 }

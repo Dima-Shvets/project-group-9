@@ -1421,7 +1421,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 20px;
+    padding-top: 0;
   }
 }
 
@@ -1579,9 +1579,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 62px;
 }
 
@@ -1609,6 +1609,10 @@ img {
 
 .slick-img__item:not(:last-child) {
   margin-right: 30px;
+}
+
+.slick-plus {
+  display: none;
 }
 
 .contacts {
