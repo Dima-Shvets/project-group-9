@@ -51,16 +51,16 @@
   margin: 0 auto;
 }
 
-.slick-initialized .slick-slide {
-}
 @media screen and(min-width:768px) {
   .slick-initialized .slick-slide {
     display: flex;
+    justify-content: center;
   }
 }
 @media screen and(min-width:1366px) {
   .slick-initialized .slick-slide {
     display: flex;
+    justify-content: center;
   }
 }
 .img-wraper {
@@ -147,7 +147,7 @@
 }
 @media screen and (min-width: 768px) {
   .reviews__wraper {
-    width: 706px;
+    width: 437px;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -171,7 +171,7 @@
     line-height: 1.23;
     color: var(--accent-color);
     margin-bottom: 10px;
-    padding-left: 35px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -182,6 +182,7 @@
     letter-spacing: 0.08em;
     color: var(--accent-color);
     margin-bottom: 10px;
+    text-align: left;
   }
 }
 
@@ -206,20 +207,24 @@
 
 @media screen and (min-width: 768px) {
   .reviews__feature {
+    margin: 0;
     font-size: 12px;
     line-height: 1.25;
     color: var(--primary-grey-color);
     margin-bottom: 26px;
     width: 482px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1366px) {
   .reviews__feature {
+    margin: 0;
     font-size: 14px;
     line-height: 1.21;
     color: var(--primary-grey-color);
     margin-bottom: 26px;
     width: 482px;
+    text-align: left;
   }
 }
 
@@ -234,18 +239,24 @@
 }
 @media screen and(min-width:768px) {
   .reviews__text {
+    margin: 0;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 1.56;
+    font-size: 12px;
+    line-height: 20px;
     color: var(--secondary-grey-color);
+    text-align: left;
+    padding-bottom: 51px;
+    padding-left: 0;
   }
 }
 @media screen and(min-width:1366px) {
   .reviews__text {
+    margin: 0;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.56;
     color: var(--secondary-grey-color);
+    text-align: left;
   }
 }
 
@@ -263,12 +274,44 @@
 
 .slick-prev::before {
   background-image: url(../images/reviews/left.svg);
-  background-position: left;
+  position: absolute;
+  top: 387px;
+  left: 26px;
+}
+@media screen and (min-width: 768px) {
+  .slick-prev::before {
+    position: initial;
+    background-image: url(../images/reviews/left.svg);
+    background-position: left;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .slick-prev::before {
+    position: initial;
+    background-image: url(../images/reviews/left.svg);
+    background-position: left;
+  }
 }
 
 .slick-next::before {
   background-image: url(../images/reviews/right.svg);
-  background-position: right;
+  position: absolute;
+  top: 387px;
+  right: 23px;
+}
+@media screen and(min-width:768px) {
+  .slick-next::before {
+    background-image: url(../images/reviews/right.svg);
+    position: initial;
+    background-position: right;
+  }
+}
+@media screen and(min-width:1366px) {
+  .slick-next::before {
+    background-image: url(../images/reviews/right.svg);
+    position: initial;
+    background-position: right;
+  }
 }
 
 .slick-img {
