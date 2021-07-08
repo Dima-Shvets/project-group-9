@@ -131,6 +131,7 @@
       font-size: 20px;
       line-height: 1.4;
       margin-left: -40px;
+      margin-top: -40px;
     }
     &__items::before {
       padding-bottom: 10px;
@@ -142,8 +143,6 @@
     -ms-flex-preferred-size: calc((100% - 120px) / 3);
         flex-basis: calc((100% - 120px) / 3);
     margin-left: 40px;
-    &:nth-child(n + 4) {
-      margin-top: 32px;
-    }
+    margin-top: 40px;
   }
 }
