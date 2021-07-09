@@ -63,7 +63,6 @@
       var(--primary-white-color) 30.82%
     );
     &__title {
-      padding-top: 10px;
       margin-bottom:  25px;
     }
     &__description {
@@ -84,6 +83,7 @@
     margin-top: -20px;
   }
   .problems__list > .problems__items {
+    -ms-flex-preferred-size: calc((100% - 44px) / 2);
     flex-basis: calc((100% - 44px) / 2);
     margin-left: 22px;
     margin-top: 20px;
@@ -101,8 +101,8 @@
     align-items: center;
     background-image: linear-gradient(
       to bottom,
-      var(--primary-dark-color) 78.87%,
-      var(--primary-white-color) 21.13%
+      var(--primary-dark-color) 560px,
+      var(--primary-white-color) 150px
     );
     z-index: -1;
     &__title {
@@ -110,21 +110,20 @@
     }
     &__description {
       position: relative;
+      height: 362px;
       padding: 70px 112px 62px 114px;
-      &::after {
-        position: absolute;
-        display: block;
-        content: '';
-        background-image: url(../images/problems/campfire.svg);
-        background-repeat: no-repeat;
-        background-position: right;
-        width: 455px;
-        height: 472px;
-        transform: translateY(-50px);
-        right: -231px;
-        bottom: 0;
-        z-index: -1;
-      }
+    }
+    &__container::after {
+      position: absolute;
+      display: block;
+      content: '';
+      background-image: url(../images/problems/campfire.svg);
+      background-repeat: no-repeat;
+      background-position: right;
+      width: 455px;
+      height: 470px;
+      transform: translate(1068px,-602px);
+      z-index: -1;
     }
     &__list {
       display: flex;
@@ -132,6 +131,7 @@
       font-size: 20px;
       line-height: 1.4;
       margin-left: -40px;
+      margin-top: -40px;
     }
     &__items::before {
       padding-bottom: 10px;
@@ -140,10 +140,9 @@
     }
   }
   .problems__list > .problems__items {
-    flex-basis: calc((100% - 120px) / 3);
+    -ms-flex-preferred-size: calc((100% - 120px) / 3);
+        flex-basis: calc((100% - 120px) / 3);
     margin-left: 40px;
-    &:nth-child(n + 4) {
-      margin-top: 32px;
-    }
+    margin-top: 40px;
   }
 }
