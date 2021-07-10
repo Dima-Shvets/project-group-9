@@ -162,11 +162,9 @@
 }
 
 .mobile-menu-container {
-    @media screen and (max: width 767px) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    }
 }
 
 .mobile-menu-close-button {
